@@ -1161,79 +1161,163 @@
     }
     
     /* Text Effect Animation */
-	if ($('.text-anime-style-1').length) {
-		let staggerAmount 	= 0.05,
-			translateXValue = 0,
-			delayValue 		= 0.5,
-		   animatedTextElements = document.querySelectorAll('.text-anime-style-1');
-		
-		animatedTextElements.forEach((element) => {
-			let animationSplitText = new SplitText(element, { type: "chars, words" });
-				gsap.from(animationSplitText.words, {
-				duration: 1,
-				delay: delayValue,
-				x: 20,
-				autoAlpha: 0,
-				stagger: staggerAmount,
-				scrollTrigger: { trigger: element, start: "top 85%" },
-				});
-		});		
-	}
+	if ($("html").attr("dir") === "ltr" && $(".text-anime-style-1").length) {
+    let staggerAmount = 0.05,
+      translateXValue = 0,
+      delayValue = 0.5,
+      animatedTextElements = document.querySelectorAll(".text-anime-style-1");
+
+    animatedTextElements.forEach((element) => {
+      let animationSplitText = new SplitText(element, { type: "chars, words" });
+      gsap.from(animationSplitText.words, {
+        duration: 1,
+        delay: delayValue,
+        x: 20,
+        autoAlpha: 0,
+        stagger: staggerAmount,
+        scrollTrigger: { trigger: element, start: "top 85%" },
+      });
+    });
+  }
 	
-	if ($('.text-anime-style-2').length) {				
-		let	 staggerAmount 		= 0.03,
-			 translateXValue	= 20,
-			 delayValue 		= 0.1,
-			 easeType 			= "power2.out",
-			 animatedTextElements = document.querySelectorAll('.text-anime-style-2');
-		
-		animatedTextElements.forEach((element) => {
-			let animationSplitText = new SplitText(element, { type: "chars, words" });
-				gsap.from(animationSplitText.chars, {
-					duration: 2,
-					delay: delayValue,
-					x: translateXValue,
-					autoAlpha: 0,
-					stagger: staggerAmount,
-					ease: easeType,
-					scrollTrigger: { trigger: element, start: "top 85%"},
-				});
-		});		
-	}
+	if ($("html").attr("dir") === "ltr" && $(".text-anime-style-2").length) {
+    let staggerAmount = 0.03,
+      translateXValue = 20,
+      delayValue = 0.1,
+      easeType = "power2.out",
+      animatedTextElements = document.querySelectorAll(".text-anime-style-2");
+
+    animatedTextElements.forEach((element) => {
+      let animationSplitText = new SplitText(element, { type: "chars, words" });
+      gsap.from(animationSplitText.chars, {
+        duration: 2,
+        delay: delayValue,
+        x: translateXValue,
+        autoAlpha: 0,
+        stagger: staggerAmount,
+        ease: easeType,
+        scrollTrigger: { trigger: element, start: "top 85%" },
+      });
+    });
+  }
 	
-	if ($('.text-anime-style-3').length) {		
-		let	animatedTextElements = document.querySelectorAll('.text-anime-style-3');
-		
-		 animatedTextElements.forEach((element) => {
-			//Reset if needed
-			if (element.animation) {
-				element.animation.progress(1).kill();
-				element.split.revert();
-			}
+	if ($("html").attr("dir") === "ltr" && $(".text-anime-style-3").length) {
+    let animatedTextElements = document.querySelectorAll(".text-anime-style-3");
 
-			element.split = new SplitText(element, {
-				type: "lines,words,chars",
-				linesClass: "split-line",
-			});
-			gsap.set(element, { perspective: 400 });
+    animatedTextElements.forEach((element) => {
+      //Reset if needed
+      if (element.animation) {
+        element.animation.progress(1).kill();
+        element.split.revert();
+      }
 
-			gsap.set(element.split.chars, {
-				opacity: 0,
-				x: "50",
-			});
+      element.split = new SplitText(element, {
+        type: "lines,words,chars",
+        linesClass: "split-line",
+      });
+      gsap.set(element, { perspective: 400 });
 
-			element.animation = gsap.to(element.split.chars, {
-				scrollTrigger: { trigger: element,	start: "top 90%" },
-				x: "0",
-				y: "0",
-				rotateX: "0",
-				opacity: 1,
-				duration: 1,
-				ease: Back.easeOut,
-				stagger: 0.02,
-			});
-		});		
-	}
+      gsap.set(element.split.chars, {
+        opacity: 0,
+        x: "50",
+      });
+
+      element.animation = gsap.to(element.split.chars, {
+        scrollTrigger: { trigger: element, start: "top 90%" },
+        x: "0",
+        y: "0",
+        rotateX: "0",
+        opacity: 1,
+        duration: 1,
+        ease: Back.easeOut,
+        stagger: 0.02,
+      });
+    });
+  }
+
+    if ($('html').attr('dir') === 'rtl' && $(".text-anime-style-1").length) {
+        let staggerAmount = 0.05,
+        translateXValue = 0,
+        delayValue = 0.5,
+        animatedTextElements = document.querySelectorAll(
+            ".text-anime-style-1"
+        );
+
+        animatedTextElements.forEach((element) => {
+        let animationSplitText = new SplitText(element, {
+            type: "words",
+        });
+        gsap.from(animationSplitText.words, {
+            duration: 1,
+            delay: delayValue,
+            x: 20,
+            autoAlpha: 0,
+            stagger: staggerAmount,
+            scrollTrigger: { trigger: element, start: "top 85%" },
+        });
+        });
+    }
+
+    if ($('html').attr('dir') === 'rtl' && $(".text-anime-style-2").length) {
+        let staggerAmount = 0.03,
+        translateXValue = 20,
+        delayValue = 0.1,
+        easeType = "power2.out",
+        animatedTextElements = document.querySelectorAll(
+            ".text-anime-style-2"
+        );
+
+        animatedTextElements.forEach((element) => {
+        let animationSplitText = new SplitText(element, {
+            type: "words",
+        });
+        gsap.from(animationSplitText.words, {
+            duration: 2,
+            delay: delayValue,
+            x: translateXValue,
+            autoAlpha: 0,
+            stagger: staggerAmount,
+            ease: easeType,
+            scrollTrigger: { trigger: element, start: "top 85%" },
+        });
+        });
+    }
+
+    if ($('html').attr('dir') === 'rtl' && $(".text-anime-style-3").length) {
+        let animatedTextElements = document.querySelectorAll(
+        ".text-anime-style-3"
+        );
+
+        animatedTextElements.forEach((element) => {
+        //Reset if needed
+        if (element.animation) {
+            element.animation.progress(1).kill();
+            element.split.revert();
+        }
+
+        element.split = new SplitText(element, {
+            type: "lines,words",
+            linesClass: "split-line",
+        });
+        gsap.set(element, { perspective: 400 });
+
+        gsap.set(element.split.words, {
+            opacity: 0,
+            x: "50",
+        });
+
+        element.animation = gsap.to(element.split.words, {
+            scrollTrigger: { trigger: element, start: "top 90%" },
+            x: "0",
+            y: "0",
+            rotateX: "0",
+            opacity: 1,
+            duration: 1,
+            ease: Back.easeOut,
+            stagger: 0.02,
+        });
+        });
+    }
 
     
 

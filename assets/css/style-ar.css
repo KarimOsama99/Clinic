@@ -1,0 +1,144 @@
+html {
+    direction: rtl;
+}
+
+.hero-1 .scroll-down .hero-scroll-wrap:before {
+    right: 50% !important;
+}
+
+.ms-2 {
+    margin-left: unset !important;
+    margin-right: .5rem !important;
+}
+.fa-light, .fa-regular {
+    transform: rotateY(180deg);
+}
+#testi-sec .fa-arrow-left,#testi-sec .fa-arrow-right {
+    transform: rotateY(180deg);
+}
+
+.testiSlide1 .icon-box {
+    right: unset !important;
+    left: 72px !important;
+}
+
+.th-btn img {
+    margin-right: unset !important;
+    margin-left: 8px !important;
+}
+
+.header-links li > i {
+    margin-right: unset !important;
+    margin-left: 6px !important;
+}
+.header-links li:not(:last-child) {
+    margin-right: unset !important;
+    margin-left: 18px !important;
+}
+
+.about-wrapp {
+    right: unset !important;
+    left: -10% !important;
+}
+
+.header-button .search-form button {
+    right: unset !important;
+    left: 15px !important;
+}
+
+.choose-img-box .img2 {
+    right: unset !important;
+    left: -45px !important;
+}
+.choose-img-box .img3 {
+    left: unset !important;
+    right: 40% !important;
+}
+
+.accordion-card .accordion-button:after {
+    right: unset !important;
+    left: 30px !important;
+}
+.blog-meta span, .blog-meta a {
+    margin-right: unset !important;
+    margin-left: 32px !important;
+}
+.blog-meta span i, .blog-meta a i {
+    margin-right: unset !important;
+    margin-left: 6px !important;
+}
+
+.footer-layout2 .footer-widget .th-widget-about:before {
+    right: unset !important;
+    left: -40px !important;
+}
+
+.footer-layout2 .call-info {
+    margin-left: unset !important;
+    margin-right: auto !important;
+}
+
+@media (min-width: 992px) {
+    .text-lg-end {
+        text-align: left !important;
+    }
+}
+
+.hero-1 .social-links {
+    left: unset !important;
+    right: -5.5% !important;
+}
+@media (max-width: 1899px) {
+    .hero-1 .social-links {
+        left: unset !important;
+        right: -8% !important;
+    }
+}
+
+.testiSlide2 .icon-box {
+    right: unset !important;
+    left: 72px !important;
+}
+.marquee {
+    direction: ltr !important;
+}
+
+.img-box4 .about-wrapp {
+    left: unset !important;
+    right: -10% !important;
+}
+@media (max-width: 1799px) {
+    .img-box4 .about-wrapp {
+        left: unset !important;
+        right: 0 !important;
+    }
+}
+.checklist ul {
+    text-align: right !important;
+}
+.checklist li:before {
+    margin-right: unset !important;
+    margin-left: 10px !important;
+}
+.about-wrapper.style2 .video-img2 {
+    margin-right: unset !important;
+    margin-left: -80px !important;
+}
+
+.form-group > i {
+    right: unset !important;
+    left: 25px !important;
+}
+.appointment-form .nice-select:after {
+    right: unset !important;
+    left: 30px !important;
+}
+input[type=date] {
+    text-align: right !important;
+    padding: 0 45px 0 25px !important;
+}
+
+.scroll-top {
+    right: unset !important;
+    left: 30px !important;
+}
