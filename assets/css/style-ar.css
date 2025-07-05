@@ -33,6 +33,23 @@ html {
     margin-left: 8px !important;
 }
 
+.th-mobile-menu ul li a {
+    padding-left: unset !important;
+    padding-right: 20px !important;
+    text-align: right !important;
+}
+.th-menu-wrapper .th-menu-toggle {
+    right: unset !important;
+    left: -16.5px !important;
+}
+.th-mobile-menu ul li a:before {
+    left: unset !important;
+    right: 0 !important;
+    margin-right: unset !important;
+    margin-left: 10px !important;
+    transform: rotate(180deg);
+}
+
 .header-links li > i {
     margin-right: unset !important;
     margin-left: 6px !important;
