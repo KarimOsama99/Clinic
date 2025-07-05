@@ -783,6 +783,9 @@ ul.wp-block-rss a {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
   }
+  .about-wrapp {
+    top: 30% !important;
+  }
 }
 
 .post-password-form label {
@@ -2655,6 +2658,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .preloader-inner img {
   display: block;
   margin: 0 auto 0 auto;
+  width: 400px;
 }
 
 /* Specific styles for .heart-rate container */
@@ -7740,10 +7744,27 @@ ol.widget_recent_comments,
   padding-bottom: 15px;
   /* Extra small devices */
 }
+.header-logo img {
+  width: 300px !important;
+  border-radius: 9px;
+}
+.about-logo img {
+  border-radius: 15px;
+}
 
 @media (max-width: 575px) {
-  .header-logo {
+  /* .header-logo {
     max-width: 150px;
+  } */
+  .header-logo img {
+    border-radius: 0;
+  }
+  .header-logo.style1 img,
+  .header-logo img {
+    width: 225px !important;
+  }
+  .header-button {
+    gap: .5rem;
   }
   .header-logo .icon-masking .mask-icon {
     -webkit-mask-size: cover;
@@ -8652,7 +8673,7 @@ ol.widget_recent_comments,
 }
 
 .footer-layout2 .call-info {
-  max-width: 288px;
+  max-width: 300px;
   display: block;
   margin-left: auto;
   background-color: var(--white-color);
@@ -16122,6 +16143,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .global-img img {
+  height: 300px;
   width: 100%;
   object-fit: cover;
   -webkit-transition: 1.3s all ease;
@@ -16980,8 +17002,9 @@ span.select2-selection.select2-selection--single:focus {
 
 @media (max-width: 575px) {
   .img-box4 .about-wrapp {
-    position: relative;
-    top: 0;
+    /* position: relative;
+    top: 0; */
+    display: none;
   }
 }
 
@@ -22677,6 +22700,19 @@ span.select2-selection.select2-selection--single:focus {
 
 .service-card.style2 {
   border: 1px solid var(--smoke-color);
+  /* min-height: 335px !important; */
+}
+
+.line-clamp-2, .line-clamp-3 {
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+}
+.line-clamp-2 {
+  -webkit-line-clamp: 2;
+}
+.line-clamp-3 {
+  -webkit-line-clamp: 3;
 }
 
 .service-card.style2:hover {
@@ -23174,6 +23210,15 @@ span.select2-selection.select2-selection--single:focus {
 
 .service-grid2 .box-img img {
   border-radius: 8px;
+}
+
+@media(min-width: 1191px) {
+  .service-grid2 .box-img {
+    width: 450px;
+  }
+  .about-wrapper.style2 .video-img2 {
+    width: 300px
+  }
 }
 
 .service-grid2 .th-btn {

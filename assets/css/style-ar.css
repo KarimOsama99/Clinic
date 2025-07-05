@@ -22,6 +22,12 @@ html {
     left: 72px !important;
 }
 
+.title-area,
+.title-area .text-anime,
+.fs-18 {
+    text-align: right !important;
+}
+
 .th-btn img {
     margin-right: unset !important;
     margin-left: 8px !important;
@@ -36,9 +42,26 @@ html {
     margin-left: 18px !important;
 }
 
+.main-menu ul li:first-child {
+    margin-left: 14px !important;
+    margin-right: 0 !important;
+}
+.main-menu ul li:last-child {
+    margin-right: 14px !important;
+    margin-left: 0 !important;
+}
+.main-menu > ul > li {
+    margin: 0 14px !important;
+}
+
 .about-wrapp {
     right: unset !important;
     left: -10% !important;
+}
+
+.hero-1 .slider-controller {
+    right: unset !important;
+    left: 66px !important;
 }
 
 .header-button .search-form button {
@@ -99,8 +122,11 @@ html {
     right: unset !important;
     left: 72px !important;
 }
-.marquee {
+.marquee, .call-info_link, .call-info .call-link {
     direction: ltr !important;
+}
+.media-body {
+    text-align: right !important;
 }
 
 .img-box4 .about-wrapp {
@@ -113,7 +139,8 @@ html {
         right: 0 !important;
     }
 }
-.checklist ul {
+.checklist ul,
+.accordion-card .accordion-button {
     text-align: right !important;
 }
 .checklist li:before {
@@ -129,6 +156,10 @@ html {
     right: unset !important;
     left: 25px !important;
 }
+[class*="col-"].form-group > i {
+    left: calc((var(--bs-gutter-x) / 2) + 25px) !important;
+}
+
 .appointment-form .nice-select:after {
     right: unset !important;
     left: 30px !important;
@@ -141,4 +172,15 @@ input[type=date] {
 .scroll-top {
     right: unset !important;
     left: 30px !important;
+}
+
+.footer-layout2 .social-links .title {
+    margin-right: unset !important;
+    margin-left: 16px !important;
+}
+.footer-layout2 .social-links a {
+    margin: 0 0 0 10px !important;
+}
+.footer-info span {
+    direction: ltr !important;
 }
