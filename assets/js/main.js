@@ -368,6 +368,16 @@
         }
     });
 
+    /* Social Media Button */
+    const $nav = $(".social-btn"),
+      $toggleBtn = $nav.find(".toggle-btn");
+
+    // toggle open class on click
+    $toggleBtn.on("click", function () {
+      $nav.toggleClass("open");
+    });
+
+
     /*----------- 21. image Slider ----------*/
     $("#slider").on("input change", (e) => {
         const sliderPos = e.target.value;

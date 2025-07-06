@@ -3109,6 +3109,83 @@ input[type=time]::-webkit-calendar-picker-indicator {
   transition: all 0.4s ease;
 }
 
+.social-btn{
+  position: fixed;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 99;
+}
+.social-btn .nav-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-45deg);
+}
+.nav-content .toggle-btn,
+.nav-content span a{
+  height: 55px;
+  width: 55px;
+  background: #fff;
+  border: 1px solid #2596be;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  /* box-shadow: 0 0 20px rgba(0,0,0,0.2); */
+  transition: all .2s linear;
+}
+.nav-content .toggle-btn{
+  font-size: 35px;
+  color: #063970;
+  z-index: 100;
+  cursor: pointer;
+  transform: rotate(-225deg);
+  transition: all 0.6s ease;
+}
+
+.nav-content .toggle-btn:hover,
+.nav-content span a:hover {
+  background: #2e5596;
+  color: #fff;
+}
+.nav-content span a:hover i {
+  color: #fff !important;
+}
+
+.social-btn.open .toggle-btn{
+  transform: rotate(0deg);
+}
+.nav-content span{
+  position: absolute;
+  transition: all 0.6s ease;
+  opacity: 0;
+}
+.social-btn.open .nav-content span{
+  transform: rotate(calc(var(--i) * (360deg/8))) translateY(120px);
+  opacity: 1;
+}
+.nav-content span a{
+  text-decoration: none;
+  transform: rotate(45deg);
+}
+.nav-content span a i{
+  font-size: 24px;
+  color: #063970;
+  transform: rotate(calc(var(--i) * (360deg/ -8)));
+  opacity: 0.8;
+  transition: 0.2s;
+}
+.nav-content span a:hover i{
+  opacity: 1;
+}
+
 .scroll-top {
   position: fixed;
   right: 30px;
@@ -8091,6 +8168,9 @@ ol.widget_recent_comments,
   }
   .mobile-logo a img {
     width: 215px !important;
+  }
+  .choose-img-box .img2 {
+    left: unset !important;
   }
 }
 

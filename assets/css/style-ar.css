@@ -190,6 +190,16 @@ input[type=date] {
     right: unset !important;
     left: 30px !important;
 }
+.social-btn {
+    right: unset !important;
+    left: 15px !important;
+}
+.social-btn .nav-content{
+    transform: rotate(135deg) !important;
+}
+.nav-content span a {
+    transform: rotate(225deg) !important;
+}
 
 .footer-layout2 .social-links .title {
     margin-right: unset !important;
