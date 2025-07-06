@@ -260,15 +260,15 @@ Contact Area
                         <h3 class="h4 mb-30 mt-n3">Do you have questions? Contact Us</h3>
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Name" autocomplete="name">
                                 <i class="fal fa-user"></i>
                             </div>
                             <div class="form-group col-md-6">
-                                <input type="tel" class="form-control" name="number" id="number" placeholder="Phone Number">
+                                <input type="tel" class="form-control" name="number" id="number" placeholder="Phone Number" autocomplete="tel">
                                 <i class="fal fa-phone"></i>
                             </div>
                             <div class="form-group col-12">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="e-mail address*">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="e-mail address*" autocomplete="email">
                                 <i class="fal fa-envelope"></i>
                             </div>
                             <div class="form-group col-12">
@@ -367,7 +367,7 @@ Map Area
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-8">
+                    <div class="col-xl-4">
                         <div class="footer-tags">
                             <div class="h4 text-white">Services Needed?</div>
                             <div class="tagcloud">
@@ -386,6 +386,16 @@ Map Area
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="footer-newsletter">
+                            <div class="h4 text-white">Share Your Feedback</div>
+                            <p class="text">We value your feedback! Please take a moment to rate us.</p>
+                            <form action="#" class="newsletter-form">
+                                <input type="text" id="feedback" placeholder="Enter your feedback" required>
+                                <button type="submit" class="th-btn style1">Share</button>
+                            </form>
                         </div>
                     </div>
                 </div>

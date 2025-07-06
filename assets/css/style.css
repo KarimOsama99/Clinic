@@ -8409,6 +8409,10 @@ ol.widget_recent_comments,
     text-align: center;
     margin-bottom: 25px;
   }
+  .footer-newsletter {
+    margin-top: 35px;
+    margin-bottom: 25px;
+  }
 }
 
 /* Medium devices */
@@ -22237,10 +22241,10 @@ span.select2-selection.select2-selection--single:focus {
 .newsletter-form .th-btn {
   min-width: 130px;
   padding: 16px 35px;
-  border-radius: 100px;
+  border-radius: 5px;
   position: absolute;
-  top: 7px;
-  right: 7px;
+  top: 0;
+  right: 0;
   /* Small devices */
 }
 
@@ -25456,6 +25460,7 @@ span.select2-selection.select2-selection--single:focus {
 /*------------------- 4.00. Feature -------------------*/
 /* feature card start -------------------------*/
 .feature-card {
+  min-height: 275px !important;
   background-color: #FFF2F2;
   border-radius: 16px;
   padding: 40px;
@@ -25465,6 +25470,7 @@ span.select2-selection.select2-selection--single:focus {
 @media (max-width: 1399px) {
   .feature-card {
     padding: 30px;
+    min-height: auto !important;
   }
 }
 
