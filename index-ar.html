@@ -255,6 +255,7 @@
             <div class="row gy-4 justify-content-center">
                 <div class="col-md-6 col-xl-4 feature-card_wrapp wow fadeInLeft" data-wow-delay=".2s">
                     <div class="feature-card th-ani">
+                        <div class="icon-btn"><i class="fa-solid fa-eye"></i></div>
                         <h3 class="box-title text-anime-style-2">رؤيتنا</h3>
                         <p class="box-text">رؤيتنا هي الريادة في الجراحات المتقدمة والآمنة. نضع أعلى معايير الرعاية ونسعى جاهدين لتحسين حياة المرضى وبناء الثقة يومًا بعد يوم.
                         </p>
@@ -264,6 +265,7 @@
 
                 <div class="col-md-6 col-xl-4 feature-card_wrapp wow fadeInUp" data-wow-delay=".4s">
                     <div class="feature-card th-ani">
+                        <div class="icon-btn"><i class="fa-solid fa-gears"></i></div>
                         <h3 class="box-title text-anime-style-2">مهمتنا</h3>
                         <p class="box-text">مهمتنا هي تقديم رعاية صحية تركز على المريض باستخدام أحدث التقنيات ونهج رعاية متكامل. نركز على أفضل النتائج وجودة الحياة.
                         </p>
@@ -273,6 +275,7 @@
 
                 <div class="col-md-6 col-xl-4 feature-card_wrapp wow fadeInRight" data-wow-delay=".6s">
                     <div class="feature-card th-ani">
+                        <div class="icon-btn"><i class="fa-solid fa-circle-check"></i></div>
                         <h3 class="box-title text-anime-style-2">أهدافنا</h3>
                         <ul class="box-text">
                             <li>توفير عمليات جراحية آمنة مع الحد الأدنى من المخاطر.</li>
@@ -1121,9 +1124,10 @@
                     <div class="col-xl-4">
                         <div class="footer-newsletter">
                             <div class="h4 text-white">شارك برأيك</div>
-                            <p class="text">نحن نقدر ملاحظاتك! يرجى أخذ لحظة لتقييمنا.</p>
-                            <form action="#" class="newsletter-form">
-                                <input type="text" id="feedback" placeholder="أدخل ملاحظاتك" required>
+                            <!-- <p class="text">We value your feedback! Please take a moment to rate us.</p> -->
+                            <form action="#" class="d-flex flex-column gap-3">
+                                <input type="text" name="name" placeholder="أدخل اسمك" autocomplete="name" required>
+                                <textarea name="feedback" id="feedback" placeholder="أدخل ملاحظاتك" required></textarea>
                                 <button type="submit" class="th-btn style1">شارك</button>
                             </form>
                         </div>

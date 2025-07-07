@@ -393,9 +393,10 @@
                     <div class="col-xl-4">
                         <div class="footer-newsletter">
                             <div class="h4 text-white">Share Your Feedback</div>
-                            <p class="text">We value your feedback! Please take a moment to rate us.</p>
-                            <form action="#" class="newsletter-form">
-                                <input type="text" id="feedback" placeholder="Enter your feedback" required>
+                            <!-- <p class="text">We value your feedback! Please take a moment to rate us.</p> -->
+                            <form action="#" class="d-flex flex-column gap-3">
+                                <input type="text" name="name" placeholder="Enter your name" autocomplete="name" required>
+                                <textarea name="feedback" id="feedback" placeholder="Enter your feedback" required></textarea>
                                 <button type="submit" class="th-btn style1">Share</button>
                             </form>
                         </div>

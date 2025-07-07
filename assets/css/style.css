@@ -3111,9 +3111,9 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .social-btn{
   position: fixed;
-  top: 50%;
+  top: 80%;
   right: 15px;
-  transform: translateY(-50%);
+  transform: translateY(-75%);
   width: 80px;
   height: 300px;
   display: flex;
@@ -3133,7 +3133,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
   height: 55px;
   width: 55px;
   background: #fff;
-  border: 1px solid #2596be;
+  border: 1px solid #2e5596;
+  /* border: 1px solid #2596be; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3152,7 +3153,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .nav-content .toggle-btn:hover,
 .nav-content span a:hover {
-  background: #2e5596;
+  background: #2596be;
   color: #fff;
 }
 .nav-content span a:hover i {
@@ -25460,11 +25461,29 @@ span.select2-selection.select2-selection--single:focus {
 /*------------------- 4.00. Feature -------------------*/
 /* feature card start -------------------------*/
 .feature-card {
-  min-height: 275px !important;
+  min-height: 300px !important;
   background-color: #FFF2F2;
   border-radius: 16px;
   padding: 40px;
   /* Medium Large devices */
+}
+.feature-card .icon-btn {
+  margin-bottom: 15px;
+}
+.feature-card_wrapp:nth-child(1):hover .icon-btn {
+  background-color: var(--theme-color);
+  color: var(--white-color);
+  border-color: var(--theme-color);
+}
+.feature-card_wrapp:nth-child(2):hover .icon-btn {
+  background-color: #57B33E;
+  color: var(--white-color);
+  border-color: #57B33E;
+}
+.feature-card_wrapp:nth-child(3):hover .icon-btn {
+  background-color: #8487FF;
+  color: var(--white-color);
+  border-color: #8487FF;
 }
 
 @media (max-width: 1399px) {
@@ -25479,7 +25498,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .feature-card_wrapp:nth-child(3) .feature-card {
-  background-color: #FDF4DD;
+  background-color: #F2F3FC;
 }
 
 .feature-card .box-icon {

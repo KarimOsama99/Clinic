@@ -258,6 +258,7 @@ About Area
             <div class="row gy-4 justify-content-center">
                 <div class="col-md-6 col-xl-4 feature-card_wrapp wow fadeInLeft" data-wow-delay=".2s">
                     <div class="feature-card th-ani">
+                        <div class="icon-btn"><i class="fa-solid fa-eye"></i></div>
                         <h3 class="box-title text-anime-style-2">Our Vision</h3>
                         <p class="box-text">Our vision is to lead in advanced, safe surgeries. We set the highest standards of care and work to improve lives and build trust every day.</p>
                         <a href="contact.html" class="th-btn black-border">Emergeny Call <i class="fa-regular fa-arrow-right ms-2"></i></a>
@@ -266,6 +267,7 @@ About Area
 
                 <div class="col-md-6 col-xl-4 feature-card_wrapp wow fadeInUp" data-wow-delay=".4s">
                     <div class="feature-card th-ani">
+                        <div class="icon-btn"><i class="fa-solid fa-gears"></i></div>
                         <h3 class="box-title text-anime-style-2">Our Mission</h3>
                         <p class="box-text">Our mission is to provide patient-centered care using modern techniques and a caring approach. We focus on best results and quality of life.</p>
                         <a href="about.html" class="th-btn black-border">More About Us <i class="fa-regular fa-arrow-right ms-2"></i></a>
@@ -274,6 +276,7 @@ About Area
 
                 <div class="col-md-6 col-xl-4 feature-card_wrapp wow fadeInRight" data-wow-delay=".6s">
                     <div class="feature-card th-ani">
+                        <div class="icon-btn"><i class="fa-solid fa-circle-check"></i></div>
                         <h3 class="box-title text-anime-style-2">Our Goals</h3>
                         <ul class="box-text">
                             <li>Provide safe surgeries with minimal risks.</li>
@@ -521,9 +524,10 @@ Testimonial Area
                     <div class="col-xl-4">
                         <div class="footer-newsletter">
                             <div class="h4 text-white">Share Your Feedback</div>
-                            <p class="text">We value your feedback! Please take a moment to rate us.</p>
-                            <form action="#" class="newsletter-form">
-                                <input type="text" id="feedback" placeholder="Enter your feedback" required>
+                            <!-- <p class="text">We value your feedback! Please take a moment to rate us.</p> -->
+                            <form action="#" class="d-flex flex-column gap-3">
+                                <input type="text" name="name" placeholder="Enter your name" autocomplete="name" required>
+                                <textarea name="feedback" id="feedback" placeholder="Enter your feedback" required></textarea>
                                 <button type="submit" class="th-btn style1">Share</button>
                             </form>
                         </div>
