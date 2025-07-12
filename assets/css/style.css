@@ -27765,4 +27765,99 @@ span.select2-selection.select2-selection--single:focus {
   }
 }
 
+.social-new .team-social {
+  position: fixed;
+  bottom: 115px;
+  right: 15px;
+  /* transform: translateY(-75%); */
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.social-new .team-social .icon-btn {
+  --btn-size: 40px;
+  background-color: var(--title-color);
+  border: none;
+  color: #fff;
+  border-radius: 50%;
+  border: 3px solid var(--title-color);
+  font-size: var(--btn-font-size, 18px);
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.social-new .team-social .th-social {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 55px;
+  right: 25px;
+  width: 40px;
+  min-height: 178px;
+  padding: 0;
+  color: var(--title-color);
+  -webkit-transform: scaleY(0);
+      -ms-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  z-index: 2;
+  /* Extra large devices */
+  /* Medium Large devices */
+  /* Extra small devices */
+}
+
+@media (max-width: 1500px) {
+  .social-new .team-social .th-social {
+    right: 25px;
+  }
+}
+
+@media (max-width: 1299px) {
+  .social-new .team-social .th-social {
+    right: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .social-new .team-social .th-social {
+    bottom: 70px;
+    right: 20px;
+  }
+}
+
+.social-new .team-social .th-social a {
+  border-radius: 50%;
+  margin-right: 0;
+  margin-bottom: 10px;
+  border: 1px solid var(--theme-color)
+}
+
+
+.social-new:hover .icon-btn {
+  background-color: #F2F3FC;
+  border: 3px solid var(--title-color);
+  color: var(--title-color);
+}
+
+.social-new:hover .th-social {
+  -webkit-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+          transform: scaleY(1);
+  opacity: 1;
+  visibility: visible;
+}
+
 /*# sourceMappingURL=style.css.map */
