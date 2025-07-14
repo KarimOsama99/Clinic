@@ -144,7 +144,7 @@ html {
     right: unset !important;
     left: 72px !important;
 }
-.marquee, .call-info_link, .call-info .call-link {
+.marquee, .call-info_link, .call-info .call-link, .header-info_link {
     direction: ltr !important;
 }
 .media-body {

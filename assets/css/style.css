@@ -2430,7 +2430,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   line-height: 35px;
   font-size: 18px;
   z-index: 1;
-  color: var(--title-color);
+  color: var(--white-color);
   background-color: var(--theme-color);
   border-radius: 8px;
 }
@@ -27780,7 +27780,7 @@ span.select2-selection.select2-selection--single:focus {
 
 .social-new .team-social .icon-btn {
   --btn-size: 40px;
-  background-color: var(--title-color);
+  background-color: #2596be;
   border: none;
   color: #fff;
   border-radius: 50%;
@@ -27849,7 +27849,7 @@ span.select2-selection.select2-selection--single:focus {
 .social-new:hover .icon-btn {
   background-color: #F2F3FC;
   border: 3px solid var(--title-color);
-  color: var(--title-color);
+  color: #010F1C;
 }
 
 .social-new:hover .th-social {
