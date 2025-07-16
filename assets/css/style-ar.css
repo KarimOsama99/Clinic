@@ -50,6 +50,29 @@ html {
     transform: rotate(180deg);
 }
 
+.breadcumb-menu {
+    display: flex;
+    justify-content: center;
+}
+.breadcumb-menu li {
+    display: flex;
+    gap: 8px;
+}
+.breadcumb-menu li:after {
+    margin-right: unset !important;
+    margin-left: 10px !important;
+    transform: rotate(180deg);
+}
+
+.header-links ul, .header-links ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header-links li a {
+    direction: ltr !important;
+    display: flex;
+}
 .header-links li > i {
     margin-right: unset !important;
     margin-left: 6px !important;
