@@ -27768,7 +27768,7 @@ span.select2-selection.select2-selection--single:focus {
 
 .social-new .team-social {
   position: fixed;
-  bottom: 115px;
+  bottom: 30px;
   right: 15px;
   /* transform: translateY(-75%); */
   width: 80px;
@@ -27777,6 +27777,7 @@ span.select2-selection.select2-selection--single:focus {
   justify-content: center;
   cursor: pointer;
   z-index: 99;
+  transition: all ease 0.4s;
 }
 
 .social-new .team-social .icon-btn {

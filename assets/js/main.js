@@ -196,13 +196,15 @@
         }
         updateProgress();
         $(window).scroll(updateProgress);
-        var offset = 50;
+        var offset = 250;
         var duration = 750;
         jQuery(window).on('scroll', function () {
             if (jQuery(this).scrollTop() > offset) {
                 jQuery(scrollTopbtn).addClass('show');
+                $(".social-new .team-social").css("bottom", "115px");
             } else {
-                jQuery(scrollTopbtn).removeClass('show');
+                jQuery(scrollTopbtn).removeClass("show");
+                $(".social-new .team-social").css("bottom", "30px");
             }
         });
         jQuery(scrollTopbtn).on('click', function (event) {
