@@ -82,6 +82,11 @@ html {
     margin-left: 18px !important;
 }
 
+.header-layout1 .th-btn:not(:last-child) {
+    margin-right: unset !important;
+    margin-left: 10px !important;
+}
+
 .main-menu ul li:first-child {
     margin-left: 14px !important;
     margin-right: 0 !important;
