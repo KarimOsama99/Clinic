@@ -28,6 +28,9 @@ html {
 .fs-18 {
     text-align: right !important;
 } */
+.choose-area .title-area {
+    text-align: right !important;
+}
 
 .th-btn img {
     margin-right: unset !important;

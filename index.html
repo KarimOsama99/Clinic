@@ -97,6 +97,9 @@
             <li>
               <a href="blog.html">Blog</a>
             </li>
+            <li>
+              <a href="gallery.html">Gallery</a>
+            </li>
             <li><a href="about.html">About Us</a></li>
           </ul>
         </div>
@@ -208,6 +211,9 @@
                         </li>
                         <li>
                           <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                          <a href="gallery.html">Gallery</a>
                         </li>
                         <li><a href="about.html">About Us</a></li>
                       </ul>
@@ -628,16 +634,12 @@
             </div>
           </div>
           <div class="col-xxl-7">
-            <div class="choose-img-box">
-              <div class="img1 wow fadeInLeft global-img" data-wow-delay=".3s">
-                <img src="assets/img/dr/about2.jpg" alt="" />
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/dr/about1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/dr/about2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/dr/about3.jpg" alt=""></div>
               </div>
-              <div class="img2 wow fadeInRight global-img" data-wow-delay=".6s">
-                <img src="assets/img/dr/about3.jpg" alt="" />
-              </div>
-              <!-- <div class="img3 wow fadeInUp global-img" data-wow-delay=".9s">
-                            <img src="assets/img/dr/about3.jpg" alt="">
-                        </div> -->
             </div>
           </div>
         </div>
@@ -1875,5 +1877,11 @@
 
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+      });
+    </script>
   </body>
 </html>
