@@ -40,7 +40,6 @@
     <!-- Swiper Slider -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <!-- Theme Custom CSS -->
-    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
@@ -215,279 +214,54 @@
       </div>
     </div>
 
-    <!-- gallery-section -->
-    <section class="gallery-section">
+    <!--==============================
+Gallery Area
+==============================-->
+    <section
+      class="position-relative overflow-hidden space gallery overflow-hidden"
+      id="gallery-sec"
+    >
       <div class="container">
-        <div
-          class="sec-title text-center mb_70 sec-title-animation animation-style2"
-        >
-          <span class="sub-title mb_20 title-animation">Gallery</span>
-          <h2 class="title-animation">View Our Gallery</h2>
-        </div>
-        <div class="sortable-masonry">
-          <div class="filters centred mb_50">
-            <ul class="filter-tabs text-center filter-btns clearfix">
-              <li class="active filter" data-role="button" data-filter=".all">
-                All
-              </li>
-              <li class="filter" data-role="button" data-filter=".science">
-                Science
-              </li>
-              <li class="filter" data-role="button" data-filter=".physics">
-                Physics
-              </li>
-              <li class="filter" data-role="button" data-filter=".chemistry">
-                Chemistry
-              </li>
-              <li class="filter" data-role="button" data-filter=".biology">
-                Biology
-              </li>
-              <li class="filter" data-role="button" data-filter=".tech">
-                Bio Tech
-              </li>
-            </ul>
-          </div>
-          <div class="items-container row clearfix">
-            <div
-              class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all chemistry science physics tech"
-            >
-              <div class="gallery-block-one">
-                <div class="inner-box">
-                  <figure class="image-box">
-                    <img src="assets/img/gallery/gallery-1.jpg" alt="" />
-                  </figure>
-                  <figure class="overlay-image">
-                    <img src="assets/img/gallery/gallery-1.jpg" alt="" />
-                  </figure>
-                  <div class="view-btn">
-                    <a
-                      href="assets/img/gallery/gallery-1.jpg"
-                      class="lightbox-image"
-                      data-fancybox="gallery"
-                      ><i class="fas fa-magnifying-glass"></i
-                    ></a>
-                  </div>
-                  <div class="text-box">
-                    <h3>Chemical Research</h3>
-                    <p>Laboratory</p>
-                  </div>
-                </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="blog-card wow fadeInUp">
+              <div class="box-img global-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <img src="assets/img/dr/about1.jpg" alt="blog image" />
+                </a>
               </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all science chemistry material"
-            >
-              <div class="gallery-block-one">
-                <div class="inner-box">
-                  <figure class="image-box">
-                    <img src="assets/img/gallery/gallery-2.jpg" alt="" />
-                  </figure>
-                  <figure class="overlay-image">
-                    <img src="assets/img/gallery/gallery-2.jpg" alt="" />
-                  </figure>
-                  <div class="view-btn">
-                    <a
-                      href="assets/img/gallery/gallery-2.jpg"
-                      class="lightbox-image"
-                      data-fancybox="gallery"
-                      ><i class="fas fa-magnifying-glass"></i
-                    ></a>
-                  </div>
-                  <div class="text-box">
-                    <h3>Chemical Research</h3>
-                    <p>Laboratory</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all chemistry physics biology tech"
-            >
-              <div class="gallery-block-one">
-                <div class="inner-box">
-                  <figure class="image-box">
-                    <img src="assets/img/gallery/gallery-3.jpg" alt="" />
-                  </figure>
-                  <figure class="overlay-image">
-                    <img src="assets/img/gallery/gallery-3.jpg" alt="" />
-                  </figure>
-                  <div class="view-btn">
-                    <a
-                      href="assets/img/gallery/gallery-3.jpg"
-                      class="lightbox-image"
-                      data-fancybox="gallery"
-                      ><i class="fas fa-magnifying-glass"></i
-                    ></a>
-                  </div>
-                  <div class="text-box">
-                    <h3>Chemical Research</h3>
-                    <p>Laboratory</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all science physics chemistry tech"
-            >
-              <div class="gallery-block-one">
-                <div class="inner-box">
-                  <figure class="image-box">
-                    <img src="assets/img/gallery/gallery-4.jpg" alt="" />
-                  </figure>
-                  <figure class="overlay-image">
-                    <img src="assets/img/gallery/gallery-4.jpg" alt="" />
-                  </figure>
-                  <div class="view-btn">
-                    <a
-                      href="assets/img/gallery/gallery-4.jpg"
-                      class="lightbox-image"
-                      data-fancybox="gallery"
-                      ><i class="fas fa-magnifying-glass"></i
-                    ></a>
-                  </div>
-                  <div class="text-box">
-                    <h3>Chemical Research</h3>
-                    <p>Laboratory</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all chemistry physics biology"
-            >
-              <div class="gallery-block-one">
-                <div class="inner-box">
-                  <figure class="image-box">
-                    <img src="assets/img/gallery/gallery-5.jpg" alt="" />
-                  </figure>
-                  <figure class="overlay-image">
-                    <img src="assets/img/gallery/gallery-5.jpg" alt="" />
-                  </figure>
-                  <div class="view-btn">
-                    <a
-                      href="assets/img/gallery/gallery-5.jpg"
-                      class="lightbox-image"
-                      data-fancybox="gallery"
-                      ><i class="fas fa-magnifying-glass"></i
-                    ></a>
-                  </div>
-                  <div class="text-box">
-                    <h3>Chemical Research</h3>
-                    <p>Laboratory</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all science chemistry biology tech"
-            >
-              <div class="gallery-block-one">
-                <div class="inner-box">
-                  <figure class="image-box">
-                    <img src="assets/img/gallery/gallery-6.jpg" alt="" />
-                  </figure>
-                  <figure class="overlay-image">
-                    <img src="assets/img/gallery/gallery-6.jpg" alt="" />
-                  </figure>
-                  <div class="view-btn">
-                    <a
-                      href="assets/img/gallery/gallery-6.jpg"
-                      class="lightbox-image"
-                      data-fancybox="gallery"
-                      ><i class="fas fa-magnifying-glass"></i
-                    ></a>
-                  </div>
-                  <div class="text-box">
-                    <h3>Chemical Research</h3>
-                    <p>Laboratory</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all chemistry physics biology tech"
-            >
-              <div class="gallery-block-one">
-                <div class="inner-box">
-                  <figure class="image-box">
-                    <img src="assets/img/gallery/gallery-7.jpg" alt="" />
-                  </figure>
-                  <figure class="overlay-image">
-                    <img src="assets/img/gallery/gallery-7.jpg" alt="" />
-                  </figure>
-                  <div class="view-btn">
-                    <a
-                      href="assets/img/gallery/gallery-7.jpg"
-                      class="lightbox-image"
-                      data-fancybox="gallery"
-                      ><i class="fas fa-magnifying-glass"></i
-                    ></a>
-                  </div>
-                  <div class="text-box">
-                    <h3>Chemical Research</h3>
-                    <p>Laboratory</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all science physics chemistry tech"
-            >
-              <div class="gallery-block-one">
-                <div class="inner-box">
-                  <figure class="image-box">
-                    <img src="assets/img/gallery/gallery-8.jpg" alt="" />
-                  </figure>
-                  <figure class="overlay-image">
-                    <img src="assets/img/gallery/gallery-8.jpg" alt="" />
-                  </figure>
-                  <div class="view-btn">
-                    <a
-                      href="assets/img/gallery/gallery-8.jpg"
-                      class="lightbox-image"
-                      data-fancybox="gallery"
-                      ><i class="fas fa-magnifying-glass"></i
-                    ></a>
-                  </div>
-                  <div class="text-box">
-                    <h3>Chemical Research</h3>
-                    <p>Laboratory</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all chemistry physics biology"
-            >
-              <div class="gallery-block-one">
-                <div class="inner-box">
-                  <figure class="image-box">
-                    <img src="assets/img/gallery/gallery-9.jpg" alt="" />
-                  </figure>
-                  <figure class="overlay-image">
-                    <img src="assets/img/gallery/gallery-9.jpg" alt="" />
-                  </figure>
-                  <div class="view-btn">
-                    <a
-                      href="assets/img/gallery/gallery-9.jpg"
-                      class="lightbox-image"
-                      data-fancybox="gallery"
-                      ><i class="fas fa-magnifying-glass"></i
-                    ></a>
-                  </div>
-                  <div class="text-box">
-                    <h3>Chemical Research</h3>
-                    <p>Laboratory</p>
-                  </div>
-                </div>
+              <div class="box-content">
+                <h3 class="box-title">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    >How to Choose the Right Primary Care Doctor for Your
+                    Need</a
+                  >
+                </h3>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- gallery-section end -->
 
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
     <!--============================== Footer Area ==============================-->
     <footer class="footer-wrapper footer-layout2">
       <div class="widget-area">
@@ -741,7 +515,7 @@
     <!-- Range Slider -->
     <script src="assets/js/jquery-ui.min.js"></script>
     <!-- Imagesloadedr -->
-    <script src="assets/js/imgloaded.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <!-- isotope -->
     <script src="assets/js/isotope.pkgd.min.js"></script>
     <!-- Nice-select -->
@@ -758,7 +532,6 @@
     <script src="assets/js/ScrollTrigger.min.js"></script>
     <script src="assets/js/SplitText.js"></script>
     <!-- gsap area end -->
-    <script src="assets/js/jquery.fancybox.js"></script>
 
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
